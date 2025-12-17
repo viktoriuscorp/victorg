@@ -55,6 +55,26 @@ const App = () => {
       question: "¿Ofreces consultoría para implementar IA en mi empresa?",
       answer: "Sí, ofrecemos servicios de consultoría estratégica e implementación técnica para empresas que buscan escalar operaciones con automatización."
     }
+     },
+     {
+       question: "¿Cuál es la diferencia entre Make.com y n8n?",
+       answer: "Make.com es No-Code: visual, rápido de implementar, perfecto para startups y pymes. n8n es Low-Code: más control técnico, mejor para deployments escalables. Ambos tienen 2000+ integraciones y excelente ROI en automatización empresarial."
+     },
+     {
+       question: "¿Cuánto cuesta implementar una automatización?",
+       answer: "Depende de la complejidad. Una auditoría cuesta €500-1000. Una automatización simple: €1500-3000. Implementación completa con agentes IA: €5000+. El ROI promedio se recupera en 2-3 meses."
+     },
+     {
+       question: "¿Qué son los agentes IA y cómo se relacionan con automatizaciones?",
+       answer: "Los agentes IA (basados en GPT-4) son sistemas autónomos que toman decisiones dentro de automatizaciones. Van más allá del No-Code: pueden analizar contenido, generar respuestas personalizadas y adaptarse a cambios. Perfectos para customer service, análisis de datos y operaciones complejas."
+     },
+     {
+       question: "¿Puedo automatizar procesos en mi empresa si usamos software legacy?",
+       answer: "Sí. n8n y Make.com tienen integraciones con webhooks, APIs y bases de datos SQL. Podemos conectar sistemas antiguos con herramientas modernas. La mayoría de procesos son automatizables, incluso con infraestructura compleja."
+     },
+     {
+       question: "¿Qué tipo de empresas se benefician más de la automatización?",
+       answer: "Agencias digitales, SaaS, e-commerce, consultoría, marketing agencies y equipos en operaciones. Cualquier empresa con procesos repetitivos: seguimiento de leads, reportes, integraciones entre herramientas, atención al cliente. Si tu equipo pierde tiempo en tareas manuales, hay oportunidad de automatización."
   ];
 
   const toggleAccordion = (index) => {
@@ -213,6 +233,156 @@ const App = () => {
       </section>
 
       {/* CONSULTORIA & FAQ */}
+            {/* GUIA RAPIDA DE AUTOMATIZACION */}
+            <section id="guia" className="py-24 bg-[#0a0a0a] border-t border-white/5">
+              <div data-animate className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-16">
+                  <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">¿Qué son las Automatizaciones Empresariales?</h2>
+                  <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">La automatización empresarial permite a las organizaciones conectar herramientas como Make.com y n8n para crear workflows inteligentes que ejecutan tareas repetitivas sin intervención humana. Esto libera tiempo para trabajo estratégico y reduce errores operacionales.</p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-12 mb-16">
+                  <div className="bg-[#151515] p-8 rounded-2xl border border-white/5">
+                    <h3 className="text-2xl font-bold text-blue-400 mb-4 flex items-center gap-3">
+                      <Terminal className="w-6 h-6" />
+                      Automatización No-Code
+                    </h3>
+                    <p className="text-gray-300 mb-6">Crea automatizaciones sin escribir código usando Make.com. Arrastra módulos, conecta servicios y construye workflows complejos en minutos.</p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3 text-gray-300">
+                        <CheckCircle2 className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Interfaz visual intuitiva</strong> - No necesitas programación</span>
+                      </li>
+                      <li className="flex items-start gap-3 text-gray-300">
+                        <CheckCircle2 className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>2000+ integraciones</strong> - Conecta cualquier herramienta SaaS</span>
+                      </li>
+                      <li className="flex items-start gap-3 text-gray-300">
+                        <CheckCircle2 className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Rapidez de implementación</strong> - Automatiza procesos en horas</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-[#151515] p-8 rounded-2xl border border-white/5">
+                    <h3 className="text-2xl font-bold text-purple-400 mb-4 flex items-center gap-3">
+                      <Cpu className="w-6 h-6" />
+                      Automatización Low-Code
+                    </h3>
+                    <p className="text-gray-300 mb-6">n8n te permite combinar low-code con potencia técnica. Perfecta para developers que necesitan mayor control y escalabilidad.</p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3 text-gray-300">
+                        <CheckCircle2 className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Arquitectura descentralizada</strong> - Ejecuta en tu servidor</span>
+                      </li>
+                      <li className="flex items-start gap-3 text-gray-300">
+                        <CheckCircle2 className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Código JavaScript nativo</strong> - Extensible y personalizable</span>
+                      </li>
+                      <li className="flex items-start gap-3 text-gray-300">
+                        <CheckCircle2 className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Seguridad avanzada</strong> - Control total de tus datos</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/30 rounded-3xl p-12">
+                  <h3 className="text-2xl font-bold text-white mb-6">Casos Prácticos de Automatización</h3>
+                  <div className="grid md:grid-cols-3 gap-8">
+                    <div>
+                      <h4 className="text-lg font-bold text-blue-400 mb-3">📧 Marketing Automation</h4>
+                      <p className="text-gray-300 text-sm">Automáticamente agrega leads a tu CRM, envía emails segmentados y notifica a tu equipo de nuevas oportunidades.</p>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-bold text-purple-400 mb-3">💼 Gestión de Proyectos</h4>
+                      <p className="text-gray-300 text-sm">Sincroniza tareas entre Asana, Monday.com y Slack. Mantén a todo tu equipo actualizado sin meetings innecesarias.</p>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-bold text-pink-400 mb-3">📊 Reportes Automáticos</h4>
+                      <p className="text-gray-300 text-sm">Genera reportes diarios compilando datos de múltiples fuentes y distribúyelos automáticamente a stakeholders.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* BENEFICIOS Y RESULTADOS */}
+            <section id="beneficios" className="py-24 bg-[#0d0d0d] border-t border-white/5">
+              <div data-animate className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-16">
+                  <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">¿Qué Logras Automatizando tu Negocio?</h2>
+                  <p className="text-xl text-gray-400 max-w-2xl mx-auto">Resultados verificados de empresas que implementaron automatización con nuestros servicios</p>
+                </div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                  <div className="bg-[#151515] p-8 rounded-2xl border border-blue-500/20 text-center hover:border-blue-500/50 transition-colors">
+                    <div className="text-5xl font-bold text-blue-400 mb-2">-70%</div>
+                    <p className="text-gray-300 font-semibold mb-2">Tiempo en tareas repetitivas</p>
+                    <p className="text-gray-500 text-sm">Equipos liberan 10+ horas/semana para trabajo estratégico</p>
+                  </div>
+                  <div className="bg-[#151515] p-8 rounded-2xl border border-purple-500/20 text-center hover:border-purple-500/50 transition-colors">
+                    <div className="text-5xl font-bold text-purple-400 mb-2">-95%</div>
+                    <p className="text-gray-300 font-semibold mb-2">Errores en procesos</p>
+                    <p className="text-gray-500 text-sm">Workflows automatizados eliminan errores humanos</p>
+                  </div>
+                  <div className="bg-[#151515] p-8 rounded-2xl border border-pink-500/20 text-center hover:border-pink-500/50 transition-colors">
+                    <div className="text-5xl font-bold text-pink-400 mb-2">+300%</div>
+                    <p className="text-gray-300 font-semibold mb-2">ROI promedio</p>
+                    <p className="text-gray-500 text-sm">En primeros 6 meses de implementación</p>
+                  </div>
+                  <div className="bg-[#151515] p-8 rounded-2xl border border-green-500/20 text-center hover:border-green-500/50 transition-colors">
+                    <div className="text-5xl font-bold text-green-400 mb-2">24/7</div>
+                    <p className="text-gray-300 font-semibold mb-2">Operación sin pausas</p>
+                    <p className="text-gray-500 text-sm">Tus workflows funcionan día y noche automáticamente</p>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-blue-500/30 rounded-3xl p-12 mb-12">
+                  <div className="grid md:grid-cols-2 gap-12">
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-6">¿Por qué implementar automatización ahora?</h3>
+                      <ul className="space-y-4">
+                        <li className="flex items-start gap-3">
+                          <ArrowRight className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                          <span className="text-gray-300"><strong>Competencia usa IA:</strong> Si tu competencia automatiza y tú no, quedas atrás</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <ArrowRight className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                          <span className="text-gray-300"><strong>Talento caro:</strong> La automatización es más barata que contratar personal</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <ArrowRight className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                          <span className="text-gray-300"><strong>Escalabilidad:</strong> Crece sin contratar proporcionalmenteal crecimiento</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <ArrowRight className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                          <span className="text-gray-300"><strong>Retención de talento:</strong> Tu equipo se enfoca en tareas creativas</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="bg-[#0a0a0a] rounded-2xl p-8 border border-white/5">
+                      <h4 className="text-xl font-bold text-white mb-6">Ejemplo de Ahorro Mensual</h4>
+                      <div className="space-y-4 text-sm text-gray-300">
+                        <div className="flex justify-between pb-3 border-b border-white/10">
+                          <span>Costo de 1 empleado a tiempo completo:</span>
+                          <span className="text-white font-bold">€2,500-4,000</span>
+                        </div>
+                        <div className="flex justify-between pb-3 border-b border-white/10">
+                          <span>Automatización Make.com (escalado):</span>
+                          <span className="text-white font-bold">€100-300</span>
+                        </div>
+                        <div className="flex justify-between text-lg pt-3">
+                          <span><strong>Ahorro mensual:</strong></span>
+                          <span className="text-green-400 font-bold">€2,200-3,900</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
       <section id="consultoria" className="py-24 bg-[#0d0d0d] border-t border-white/5">
         <div data-animate className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20"><h2 className="text-4xl font-bold text-white mb-4">¿Tienes un proyecto en mente?</h2><p className="text-gray-400 text-lg max-w-2xl mx-auto">Te ayudo a escalar tu negocio implementando sistemas de Inteligencia Artificial y Automatización Estratégica.</p></div>
