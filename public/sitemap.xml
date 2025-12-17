@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Página principal -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Sección Hero/Principal -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#inicio</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Herramientas (Tech Stack) -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#herramientas</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Make.com -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#herramientas-make</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- n8n -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#herramientas-n8n</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Webhooks & APIs -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#herramientas-apis</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Academia IA360 Labs -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#academia</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Canal de YouTube -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#videos</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Servicios de Consultoría -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#consultoria</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Auditoría Express -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#consultoria-auditoria</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Implementación a Medida -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#consultoria-implementacion</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Mentoría 1 a 1 -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#consultoria-mentoria</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#consultoria-faq</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Formulario de Contacto -->
+  <url>
+    <loc>https://victorgarcia.vercel.app/#contacto</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
