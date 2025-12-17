@@ -383,6 +383,123 @@ const App = () => {
               </div>
             </section>
 
+            {/* HERRAMIENTAS DE AUTOMATIZACION */}
+            <section id="herramientas" className="py-24 bg-[#0a0a0a] border-t border-white/5">
+              <div data-animate className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-16">
+                  <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Herramientas de Automatización Empresarial</h2>
+                  <p className="text-xl text-gray-400 max-w-3xl mx-auto">Plataformas de workflow automation, RPA e integración de APIs para escalar tu negocio</p>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-8 mb-12">
+                  <div className="bg-[#151515] rounded-2xl border border-white/5 p-8 hover:border-blue-500/50 transition-colors">
+                    <h3 className="text-xl font-bold text-blue-400 mb-4 flex items-center gap-2">
+                      <Zap className="w-6 h-6" />
+                      Make.com
+                    </h3>
+                    <p className="text-gray-300 mb-6">La plataforma No-Code más popular para automatización de workflows. Perfecta para integración de aplicaciones SaaS.</p>
+                    <div className="space-y-3 mb-6">
+                      <div>
+                        <span className="text-sm text-gray-400">Dificultad:</span>
+                        <div className="text-xs text-blue-400 font-bold">Principiante → Intermedio</div>
+                      </div>
+                      <div>
+                        <span className="text-sm text-gray-400">Integraciones:</span>
+                        <div className="text-xs text-blue-400 font-bold">2000+</div>
+                      </div>
+                      <div>
+                        <span className="text-sm text-gray-400">Casos de uso:</span>
+                        <div className="text-xs text-gray-300">CRM automation, email marketing, lead generation, data sync</div>
+                      </div>
+                    </div>
+                    <button className="w-full py-2 border border-blue-500/30 text-blue-400 text-sm font-bold rounded-lg hover:bg-blue-500/10 transition-colors">Explorar</button>
+                  </div>
+
+                  <div className="bg-gradient-to-b from-[#1a1a1a] to-[#111] rounded-2xl border border-purple-500/30 p-8 relative transform md:-translate-y-2 shadow-2xl shadow-purple-900/20">
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-b">RECOMENDADO</div>
+                    <h3 className="text-xl font-bold text-purple-400 mb-4 flex items-center gap-2 mt-2">
+                      <Network className="w-6 h-6" />
+                      n8n
+                    </h3>
+                    <p className="text-gray-300 mb-6">Plataforma Low-Code de código abierto. Máximo control, seguridad y escalabilidad para automatizaciones avanzadas.</p>
+                    <div className="space-y-3 mb-6">
+                      <div>
+                        <span className="text-sm text-gray-400">Dificultad:</span>
+                        <div className="text-xs text-purple-400 font-bold">Intermedio → Avanzado</div>
+                      </div>
+                      <div>
+                        <span className="text-sm text-gray-400">Integraciones:</span>
+                        <div className="text-xs text-purple-400 font-bold">500+ (custom webhooks)</div>
+                      </div>
+                      <div>
+                        <span className="text-sm text-gray-400">Casos de uso:</span>
+                        <div className="text-xs text-gray-300">APIs custom, RPA, agentes IA, workflows complejos</div>
+                      </div>
+                    </div>
+                    <button className="w-full py-2 bg-purple-600 text-white text-sm font-bold rounded-lg hover:bg-purple-700 transition-colors shadow-lg shadow-purple-600/25">Explorar</button>
+                  </div>
+
+                  <div className="bg-[#151515] rounded-2xl border border-white/5 p-8 hover:border-pink-500/50 transition-colors">
+                    <h3 className="text-xl font-bold text-pink-400 mb-4 flex items-center gap-2">
+                      <Terminal className="w-6 h-6" />
+                      Webhooks & APIs
+                    </h3>
+                    <p className="text-gray-300 mb-6">Integraciones de bajo nivel usando APIs REST y Webhooks. Para developers que necesitan máximo control.</p>
+                    <div className="space-y-3 mb-6">
+                      <div>
+                        <span className="text-sm text-gray-400">Dificultad:</span>
+                        <div className="text-xs text-pink-400 font-bold">Avanzado</div>
+                      </div>
+                      <div>
+                        <span className="text-sm text-gray-400">Flexibilidad:</span>
+                        <div className="text-xs text-pink-400 font-bold">Máxima (custom code)</div>
+                      </div>
+                      <div>
+                        <span className="text-sm text-gray-400">Casos de uso:</span>
+                        <div className="text-xs text-gray-300">APIs custom, microservicios, backend automation</div>
+                      </div>
+                    </div>
+                    <button className="w-full py-2 border border-pink-500/30 text-pink-400 text-sm font-bold rounded-lg hover:bg-pink-500/10 transition-colors">Explorar</button>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/30 rounded-2xl p-8">
+                  <h3 className="text-2xl font-bold text-white mb-6">¿Cuándo usar cada herramienta?</h3>
+                  <div className="grid md:grid-cols-3 gap-8">
+                    <div>
+                      <h4 className="text-lg font-bold text-blue-400 mb-3">Elige Make.com si:</h4>
+                      <ul className="space-y-2 text-sm text-gray-300">
+                        <li>• Necesitas rapidez de implementación</li>
+                        <li>• Tu equipo no tiene developers</li>
+                        <li>• Trabajas con SaaS estándar (Slack, Zapier, Google Sheets)</li>
+                        <li>• Presupuesto limitado en desarrollo</li>
+                        <li>• Automatización de marketing y operaciones</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-bold text-purple-400 mb-3">Elige n8n si:</h4>
+                      <ul className="space-y-2 text-sm text-gray-300">
+                        <li>• Necesitas control técnico total</li>
+                        <li>• Tienes developers en el equipo</li>
+                        <li>• Requieres seguridad/privacidad máxima</li>
+                        <li>• Automatizaciones muy complejas</li>
+                        <li>• Integración con sistemas legacy</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-bold text-pink-400 mb-3">Usa APIs si:</h4>
+                      <ul className="space-y-2 text-sm text-gray-300">
+                        <li>• Necesitas custom code de bajo nivel</li>
+                        <li>• Integración con infraestructura propia</li>
+                        <li>• Microservicios y arquitectura distribuida</li>
+                        <li>• Máxima flexibilidad y control</li>
+                        <li>• Ya tienes equipo de developers</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
       <section id="consultoria" className="py-24 bg-[#0d0d0d] border-t border-white/5">
         <div data-animate className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20"><h2 className="text-4xl font-bold text-white mb-4">¿Tienes un proyecto en mente?</h2><p className="text-gray-400 text-lg max-w-2xl mx-auto">Te ayudo a escalar tu negocio implementando sistemas de Inteligencia Artificial y Automatización Estratégica.</p></div>
