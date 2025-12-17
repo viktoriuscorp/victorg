@@ -1,0 +1,101 @@
+/* styles.css — global tweaks to complement Tailwind classes */
+:root{
+  --bg: #0a0a0a;
+  --muted: #9ca3af;
+  --accent-ring: rgba(59,130,246,0.12);
+}
+
+html,body,#root{height:100%;}
+body{
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.button-focus:focus{
+  box-shadow: 0 0 0 6px var(--accent-ring);
+  outline: none;
+  border-radius: 9999px;
+}
+
+.accordion-content{
+  transition: max-height 0.32s ease, padding 0.32s ease;
+}
+
+@media (max-width: 640px){
+  h1{line-height:1.05}
+}
+
+/* Scroll reveal */
+[data-animate]{
+  opacity: 0;
+  transform: translateY(18px) scale(0.995);
+  transition: opacity 600ms cubic-bezier(.22,.9,.38,1), transform 600ms cubic-bezier(.22,.9,.38,1);
+}
+
+[data-animate].is-visible{
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Floating decorative blobs */
+.float{
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{ transform: translateY(0); }
+  50%{ transform: translateY(-8px); }
+  100%{ transform: translateY(0); }
+}
+
+/* Small utility for subtle pulse on CTA buttons (adds on hover via existing classes) */
+.pulse-soft{
+  animation: pulse-soft 2.6s ease-in-out infinite;
+}
+@keyframes pulse-soft{
+  0%{ transform: scale(1); opacity:1 }
+  50%{ transform: scale(1.02); opacity:0.95 }
+  100%{ transform: scale(1); opacity:1 }
+}
+
+/* Card microinteraction */
+.card{
+  transition: transform 220ms cubic-bezier(.2,.9,.3,1), box-shadow 220ms cubic-bezier(.2,.9,.3,1);
+}
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+}
+
+/* Respect user's motion preference */
+@media (prefers-reduced-motion: reduce){
+  .float, .pulse-soft, [data-animate], .card{animation: none !important; transition: none !important;}
+}
+
+/* YouTube bubble styling */
+.yt-bubble{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.yt-bubble::after{
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 9999px;
+  background: radial-gradient(ellipse at center, rgba(255,59,48,0.08), transparent 40%);
+  filter: blur(8px);
+  z-index: -1;
+}
+.play-icon{
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45));
+}
+
+@media (prefers-reduced-motion: reduce){
+  .yt-bubble::after{display:none}
+}
+
+/* Ensure anchor wrapper is clickable and has no underline */
+a.inline-block{ cursor: pointer; text-decoration: none; }
