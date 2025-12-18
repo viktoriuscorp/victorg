@@ -74,7 +74,8 @@ const App = () => {
      {
        question: "¿Qué tipo de empresas se benefician más de la automatización?",
        answer: "Agencias digitales, SaaS, e-commerce, consultoría, marketing agencies y equipos en operaciones. Cualquier empresa con procesos repetitivos: seguimiento de leads, reportes, integraciones entre herramientas, atención al cliente. Si tu equipo pierde tiempo en tareas manuales, hay oportunidad de automatización."
-  ];
+      }
+      ];
 
   const toggleAccordion = (index) => {
     setActiveAccordion(activeAccordion === index ? null : index);
