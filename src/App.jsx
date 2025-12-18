@@ -54,8 +54,7 @@ const App = () => {
     {
       question: "¿Ofreces consultoría para implementar IA en mi empresa?",
       answer: "Sí, ofrecemos servicios de consultoría estratégica e implementación técnica para empresas que buscan escalar operaciones con automatización."
-    }
-     },
+    },
      {
        question: "¿Cuál es la diferencia entre Make.com y n8n?",
        answer: "Make.com es No-Code: visual, rápido de implementar, perfecto para startups y pymes. n8n es Low-Code: más control técnico, mejor para deployments escalables. Ambos tienen 2000+ integraciones y excelente ROI en automatización empresarial."
